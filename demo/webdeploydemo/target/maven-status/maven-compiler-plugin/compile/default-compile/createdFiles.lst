@@ -1,0 +1,6 @@
+entity\User.class
+db\UserMapper.class
+exceptions\UserFeedbackException.class
+db\DBconnector.class
+exceptions\ToLogException.class
+control\UserControl.class
