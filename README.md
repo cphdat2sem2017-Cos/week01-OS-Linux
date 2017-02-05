@@ -10,7 +10,8 @@ First you will get an introduction to how we are usinge [github](github.com) as 
 * Clone your repository locally  
 * Add, Commit, Push, Status
 
-## Shell usage
+
+### Shell usage
 In a bit we will need to connect to a linux machine. But to do so we need a "command prompt" or "shell". 
 
 - For the window people, I recommend to download gitbash from https://git-scm.com/downloads
