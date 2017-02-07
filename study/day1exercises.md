@@ -3,7 +3,10 @@ Some of the initial exercises will be in a group, where the rest should be done 
 
 ##Task 1 
 In order to communicate with the linux machine, you need some software on your own machine. 
-For windows you need install git to get access to git-bash. Mac has the necessary programs build in as the mac is in essence a unix machine. 
+For windows you need install git to get access to git-bash. (See slide on installing git bash for windows).
+
+Mac has the necessary programs build in as the mac is in essence a unix machine. 
+
 
 ##Task 2 
 Create an ubuntu droplet at digitalocean.com. You can make do with the small one at 5$ for a group of 4-5 students. It is plenty big for our purposes (what is the minimum requirements for a machine to run ubuntu if it is only a server?) You will be emailed a root password and an IP address to use. You will also be recommended to make a ssh key - for today you will not need it and we will look into that on day 2.
@@ -13,6 +16,8 @@ Use ssh to log into your new linux machine.
 Create a user account for each member in the group, give each user an initial password - changing your password is task 4.
 (Follow the first three steps of this guide <https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04>).
 
+The command to use is **adduser**, there is also a command named 'useradd', which is **not** what you want.
+
 ##Task 4 
 Each group member uses ssh to log into the linux machine from their own computer. Change your password on the linux machine. Log out, and log in again. One of the group members will “forget” their password, and the root user should help recover the account.
 
@@ -20,6 +25,7 @@ Each group member uses ssh to log into the linux machine from their own computer
 There are many commands which can be learned in unix, and many conventions to learn. We will only touch upon the very basics.  
 
 Each user creates a text file in their home directory using the nano editor. The file should contain at least 5 lines of text. Each user should make a copy of the file, giving it a new name. Each user should make a new folder, and move the copy to this folder. Each user should change the permissions on the folder so that other users on the same machine can see the files within it.
+
 
 ##Task 6 
 Using scp copy the file from the Linux machine down to your own machine. Copying files to and from the linux machine is best done from your own machine (why?) Change the file (including the name) on your machine, and put the changed file up on the linux machine in the folder you created.

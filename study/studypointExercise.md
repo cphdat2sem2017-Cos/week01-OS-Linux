@@ -26,7 +26,7 @@ Add a database user named "reader" with the password "bookworm#17laesehest" whic
 
 
 #Handin instructions
-You need to hand in by writing an email to **aflevering2sem@gmail.com** no later than Sunday 18th of September 2016 at 23:59.
+You need to hand in by writing an email to **koe@cphbusiness.dk** no later than Sunday 12th of February 2017 at 16:00.
 
 The email should contain the following information
 
@@ -34,5 +34,8 @@ The email should contain the following information
 * There must be a link to your deployed web application
 * The database user "reader" with the above mentioned password should be available in the database
 
-If you are not able to finish your exercise you should send an email explaining in detail what caused you to fail to do so. **If you are not able to finish the exercise and you were not present on friday to get help, you will not be granted studypoints.**
+If you are not able to finish your exercise you should send an email explaining in detail what caused you to fail to do so. 
+
+>##**If you are not able to finish the exercise and you were not present on friday to get help, you will not be granted studypoints.**
+
 
