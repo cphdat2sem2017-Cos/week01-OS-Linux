@@ -4,7 +4,7 @@ The program for today is to get MySQL installed on your ubuntu machine. Setting 
 
 Some of the tasks are about getting the server up and running, others are a refresher on SQL.
 
-I have made a [condensed SQL command overview](SQL_commands.md)
+I have made a [condensed SQL command overview](../SQL_commands.md)
 
 ##Task 1 - install server
 Install MySQL om your ubuntu server.
@@ -29,7 +29,8 @@ You will need to copy the file from your local machine to the ubuntu. Or you can
 ##Task 4 - the sql prompt
 From the mysql prompt, write sql expressions which solve the following two exercises:
 
-* Find those customers which are French* Find first and lastname for employees with the title “sales rep”.
+* Find those customers which are French
+* Find first and lastname for employees with the title “sales rep”.
 
 ##Task 5 - database users
 Just like there are _users_ of the linux machine, there are users of _MySQL database server_. These are two different sets of users.
