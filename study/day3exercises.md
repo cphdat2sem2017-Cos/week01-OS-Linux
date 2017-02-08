@@ -22,7 +22,7 @@ Start and stop the database server a few times, each time checking if it is runn
 ##Task 3 - setting up the classicmodels database
 Load the sql script which defines the classicmodels database(in the study folder as [classicmodels.sql](classicmodels.sql) ). 
 One way to do this is to my the mysql prompt read from a file instead from stdin. This can be done using the "<" in the linux command:
-mysql -u root -p < file.sql
+`mysql -u root -p < file.sql`
 
 You will need to copy the file from your local machine to the ubuntu. Or you can look at the command `wget "url"` which should allow you to download a file directly to the ubunto droplet.
 
