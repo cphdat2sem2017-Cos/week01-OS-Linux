@@ -24,6 +24,8 @@ We will look at how to set up a linux server on digitalocean, how to manage user
 * [Slides](slides/Day_1.pdf)
 * [Exercises](study/day1exercises.md)
 
+####[Often used linux commands](linux_commands.md)
+
 **Readings**:
 
 * <http://ryanstutorials.net/linuxtutorial/commandline.php>

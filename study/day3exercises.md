@@ -4,6 +4,8 @@ The program for today is to get MySQL installed on your ubuntu machine. Setting 
 
 Some of the tasks are about getting the server up and running, others are a refresher on SQL.
 
+I have made a [condensed SQL command overview](SQL_commands.md)
+
 ##Task 1 - install server
 Install MySQL om your ubuntu server.
 This tutorial from digital ocean shows how to get MySQL up and running on your ubuntu instance.
@@ -80,7 +82,7 @@ The ssh command can do something called **tunneling**. A ssh tunnel is a port on
 
 ``ssh -L 3306:localhost:3306 root@XXX.XXX.XXX.XXX``
 
-The syntax is ssh -L <localport>hostname<remoteport> <username>@<servername>. We’re using localhost as the hostname because we are directly accessing the remote mysql server through ssh. You could also use this technique to port-forward through one ssh server to another server.
+The syntax is ``ssh -L <localport>hostname<remoteport> <username>@<servername>`. We’re using localhost as the hostname because we are directly accessing the remote mysql server through ssh. You could also use this technique to port-forward through one ssh server to another server.
 
 If you already have mysql running on your local machine then you can use a different local port for the port-forwarding, and set MySQLWorkbench to access MySQL on a different port.
 
