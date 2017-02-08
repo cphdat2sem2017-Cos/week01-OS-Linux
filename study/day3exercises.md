@@ -4,7 +4,7 @@ The program for today is to get MySQL installed on your ubuntu machine. Setting 
 
 Some of the tasks are about getting the server up and running, others are a refresher on SQL.
 
-I have made a [condensed SQL command overview](SQL_commands.md)
+I have made a [condensed SQL command overview](../SQL_commands.md)
 
 ##Task 1 - install server
 Install MySQL om your ubuntu server.
@@ -21,15 +21,18 @@ Start and stop the database server a few times, each time checking if it is runn
 
 ##Task 3 - setting up the classicmodels database
 Load the sql script which defines the classicmodels database(in the study folder as [classicmodels.sql](classicmodels.sql) ). 
-One way to do this is to my the mysql prompt read from a file instead from stdin. This can be done using the "<" in the linux command:
-mysql -u root -p < file.sql
+One way to do this is to my the mysql prompt read from a file instead from stdin. 
+
+This can be done using the "<" in the linux command:
+`mysql -u root -p < file.sql`
 
 You will need to copy the file from your local machine to the ubuntu. Or you can look at the command `wget "url"` which should allow you to download a file directly to the ubunto droplet.
 
 ##Task 4 - the sql prompt
 From the mysql prompt, write sql expressions which solve the following two exercises:
 
-* Find those customers which are French* Find first and lastname for employees with the title “sales rep”.
+* Find those customers which are French
+* Find first and lastname for employees with the title “sales rep”.
 
 ##Task 5 - database users
 Just like there are _users_ of the linux machine, there are users of _MySQL database server_. These are two different sets of users.
@@ -82,7 +85,7 @@ The ssh command can do something called **tunneling**. A ssh tunnel is a port on
 
 ``ssh -L 3306:localhost:3306 root@XXX.XXX.XXX.XXX``
 
-The syntax is ``ssh -L <localport>hostname<remoteport> <username>@<servername>`. We’re using localhost as the hostname because we are directly accessing the remote mysql server through ssh. You could also use this technique to port-forward through one ssh server to another server.
+The syntax is ``ssh -L <localport>:localhost:<remoteport> <username>@<servername>``. We’re using localhost as the hostname because we are directly accessing the remote mysql server through ssh. You could also use this technique to port-forward through one ssh server to another server.
 
 If you already have mysql running on your local machine then you can use a different local port for the port-forwarding, and set MySQLWorkbench to access MySQL on a different port.
 
