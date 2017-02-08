@@ -85,7 +85,7 @@ The ssh command can do something called **tunneling**. A ssh tunnel is a port on
 
 ``ssh -L 3306:localhost:3306 root@XXX.XXX.XXX.XXX``
 
-The syntax is ``ssh -L <localport>hostname<remoteport> <username>@<servername>`. We’re using localhost as the hostname because we are directly accessing the remote mysql server through ssh. You could also use this technique to port-forward through one ssh server to another server.
+The syntax is ``ssh -L <localport>:localhost:<remoteport> <username>@<servername>``. We’re using localhost as the hostname because we are directly accessing the remote mysql server through ssh. You could also use this technique to port-forward through one ssh server to another server.
 
 If you already have mysql running on your local machine then you can use a different local port for the port-forwarding, and set MySQLWorkbench to access MySQL on a different port.
 
