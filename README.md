@@ -63,8 +63,7 @@ We will setup MySQL on the ubuntu server, set up users on MySQL with different r
 ##Day 4 - Tomcat exercise
 * [Slides](slides/Day_4.pdf)
 * [Exercises](study/day4exercises.md)
-* Readings: 
-  * [Tomcat on Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-8-on-ubuntu-16-04)
+
   
 ##Day 5 - Studypoint exercise
 
