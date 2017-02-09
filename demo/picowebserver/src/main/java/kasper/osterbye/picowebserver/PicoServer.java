@@ -50,6 +50,8 @@ public class PicoServer {
 
                     out.println( "" );
                     out.println( "<H1>Welcome to the COS Pico-WebServer</H2>" );
+                    
+                    out.println( "Well - sort of at least" );
                     out.flush();
                 }
             } catch ( IOException e ) {
