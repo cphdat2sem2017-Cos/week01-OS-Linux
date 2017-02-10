@@ -39,7 +39,7 @@ By default a new user is not allowed to do anything, not even log in.
 Here is a short list of other common possible permissions that users can enjoy.
 
 Privilege | Comment
----+---
+---|---
 ALL PRIVILEGES |  as we saw previously, this would allow a MySQL user all access to a designated database (or if no database is selected, across the system)
 CREATE |  allows them to create new tables or databases
 DROP |  allows them to them to delete tables or databases
