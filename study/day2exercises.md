@@ -2,7 +2,7 @@
 The program for today set up the linux server to use ssk-keys instead of passwords. And to get some bash-scripting done.
 
 ##Task 1
-It is not common practice to log in as root. Instead, one use the command “sudo”. Sudo is a command, which allow a user to do things only root can normally do. However, a user need to be allowed to have this permission, and giving this permission can only be done by root. Log in as root, and give one of the user sudo rights. (The exercise is about finding out how to do this - you have not been told).
+It is not common practice to log in as root. Instead, one use the command “sudo”. Sudo is a command, which allow a user to do things only root can normally do. However, a user need to be allowed to have this permission, and giving this permission can only be done by root. Log in as root, and give one of the user sudo rights. 
 
 ##Task 2
 Secure all accounts on the linux machine using [step four to six](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04) of the [Initial Server Setup with Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04).
@@ -46,11 +46,3 @@ Now let's make some decisions.
 
 ##Task 9
 Create a bash script which will automate setting up the users in your group, installing their ssh keys, and adding them to the sudo group. This will make it easier to delete a droplet and start from fresh.
-
-The clue is to make a script in git-bash on you own computer, and then notice that ssh can be called as:
-
-``ssh jdoe@remote.net "command for be executed on remote machine"``
-
-In particular, it is possible to use the following trick
-``ssh jdoe@remote.net "bash -s" < mylocalscript.sh`
-
