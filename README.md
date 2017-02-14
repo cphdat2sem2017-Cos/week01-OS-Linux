@@ -25,13 +25,16 @@ nano ~/.ssh/authorized_keys
 Insert your ssh public key here.  
 
 Check this file: `sudo nano /etc/ssh/sshd_config` to see if `PasswordAuthentication no` is there  
+
 ```
 chmod 600 ~/.ssh/authorized_keys  
 exit  
 sudo systemctl reload sshd  
 ```  
+
 Now check if you can log in with `<user>` from a terminal 
 Install java:  
+
 ```
 sudo apt-get install default-jdk
 java -version
@@ -75,10 +78,11 @@ mysql -u root -p
 CREATE DATABASE test;
 ```
 Then change this file:  
-“/etc/mysql/mysql.conf.d/mysqld.cnf”
+`/etc/mysql/mysql.conf.d/mysqld.cnf`
 by commenting out the bind-address line like this:
- #bind-address = localhost
- ```
+`#bind-address = localhost`
+
+```
 mysql -u root –p 
 CREATE USER 'testuser'@'localhost' IDENTIFIED BY 'password123'; 
 CREATE USER 'testuser'@'%' IDENTIFIED BY 'password123'; 
@@ -97,21 +101,34 @@ service mysql restart
   
 ##Day 4 - Tomcat exercise
 We will setup Tomcat server on the ubuntu server. We will then deploy a small web application using both tomcat and mysql. We will use the following commands:
+
 ```
 apt-get install tomcat8 tomcat8-admin
 apt-get install haveged 
 nano /etc/tomcat8/tomcat-users.xml
 ```
-Insert: `<role rolename="manager-gui"/><user name="admin" password="XXX" roles="manager-gui, manager-script"/>` and save
+
+Insert: 
+
+```
+<role rolename="manager-gui"/>
+<user name="admin" password="XXX" roles="manager-gui, manager-script"/>` 
+```
+and save. Take care not to add the two lines inside the comments of the file. In XML the comments start with `<!--` and ends with `-->`.
+
 ```
 service tomcat8 restart
 sudo nano /etc/tomcat8/server.xml
 ```
+
 Replace `Connector port="8080"` with `Connector port="80"` in line 71
+
 ```
 sudo nano /etc/default/tomcat8
 ```
+
 Change `#AUTHBIND=no` to `AUTHBIND=yes` (remember to remove the #-sign)
+
 ``` 
 service tomcat8 restart
 ```  
