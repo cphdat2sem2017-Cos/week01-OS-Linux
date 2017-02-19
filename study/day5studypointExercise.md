@@ -32,7 +32,7 @@ Change your program so that only when you read data from your tables to show on 
 
 
 #Handin instructions
-You need to hand in by writing an email to **aflevering2b@gmail.com** no later than Sunday 12th of february 2017 at 23:59.
+You need to hand in by writing an email to **koe@cphbusiness.dk** no later than Sunday 12th of february 2017 at 23:59.
 
 The email should contain the following information
 
